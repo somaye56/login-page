@@ -1,26 +1,20 @@
 import { Carousel} from '@mantine/carousel';
 import { Center, Image, Space, Text } from "@mantine/core";
 import Slider1 from "../../../assets/image1.png";
-import Slider2 from "../../../assets/image2.jfif";
-import Slider3 from "../../../assets/image3.jpg";
+import Slider2 from "../../../assets/image3.png";
+
 const image = [
     {
       src: Slider1,
-      title: "Welcome to Back!",
+      title: "Welcome Back!",
       text: "start managing your finance faster and better",
-      sunText: "start managing your finance faster and better",
+   
     },
     {
         src: Slider2,
-        title: "Welcome to Back!",
+        title: "Welcome Back!",
         text: "start managing your finance faster and better",
-        sunText: "start managing your finance faster and better",
-      },
-      {
-        src: Slider3,
-        title: "Welcome to Back!",
-        text: "start managing your finance faster and better",
-        sunText: "start managing your finance faster and better",
+     
       }
   ];
   
@@ -32,6 +26,7 @@ export function Slider() {
     loop
     withIndicators
     height={700}
+    
     >
      {image.map((item) => {
         return (
@@ -43,11 +38,8 @@ export function Slider() {
                   {item.title}
                 </Text>
                 <Space h="xs" />
-                <Text size="sm" c="dimmed" weight={"normal"}>
+                <Text size="lg" c="dimmed" weight={"normal"}>
                   {item.text}
-                </Text>
-                <Text size="xs" c="dimmed" weight={"normal"}>
-                  {item.sunText}
                 </Text>
               </div>
             </Center>
